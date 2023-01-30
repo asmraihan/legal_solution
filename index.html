@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/61bf647dc1.js" crossorigin="anonymous"></script>
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gray: "#4E4E4E",
+                        dark: "#131313",
+                        brown: "#B68C5A",
+                    },
+                    fontFamily: {
+                        garamond: ["EB Garamond", "serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="container mx-auto max-w-5xl lg:mt-10">
+
+        <nav class="bg-white border-gray-200  px-2 sm:px-4 py-2.5 rounded">
+            <div class="container flex flex-wrap items-center justify-between mx-auto">
+                <a href="https://fix.com/" class="flex items-center">
+                    <img src="images/logo2.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+                </a>
+                <div class="flex md:order-2">
+                    <!-- Modal toggle -->
+                    <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" type="button"
+                        class="text-white bg-brown hover:bg-brown focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-sm px-3 py-2.5 lg:px-6 lg:py-4 text-center mr-3 md:mr-0">Free
+                        Consultation</button>
+
+                    <!-- Main modal -->
+                    <div id="defaultModal" tabindex="-1" aria-hidden="true"
+                        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+                        <div class="relative w-full h-full max-w-2xl md:h-auto">
+                            <!-- Modal content -->
+                            <div class="relative bg-white rounded-lg shadow">
+                                <!-- Modal header -->
+                                <div class="flex items-start justify-between p-4 border-b rounded-t">
+                                    <h3 class="text-xl font-semibold text-gray-900 ">
+                                        Terms of Service
+                                    </h3>
+                                    <button type="button"
+                                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
+                                        data-modal-hide="defaultModal">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="sr-only">Close modal</span>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-6 space-y-3">
+                                    <p class="text-base leading-relaxed text-gray-500 ">
+                                        With less than a month to go before the European Union enacts new consumer
+                                        privacy laws for its citizens, companies around the world are updating their
+                                        terms of service agreements to comply.
+                                    </p>
+                                    <p class="text-base leading-relaxed text-gray-500 ">
+                                        The European Union’s General Data Protection Regulation (G.D.P.R.) goes into
+                                        effect on May 25 and is meant to ensure a common set of data rights in the
+                                        European Union.
+                                    </p>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
+                                    <button data-modal-hide="defaultModal" type="button"
+                                        class="text-white bg-brown hover:bg-brown focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">I
+                                        accept</button>
+                                    <button data-modal-hide="defaultModal" type="button"
+                                        class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 ">Decline</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end    -->
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-400 bg-brown rounded hover:text-gray-900 md:bg-transparent md:text-gray-900 md:p-0"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-400 rounded hover:text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-900 md:p-0">Services <span class="text-xs"><i class="fa-solid fa-chevron-right"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-400 rounded hover:text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-900 md:p-0">Cases <span class="text-xs"><i class="fa-solid fa-chevron-right"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-400 rounded hover:text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-900 md:p-0">Blog <span class="text-xs"><i class="fa-solid fa-chevron-right"></i></span></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-400 rounded hover:text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-900 md:p-0">Contact
+                                Us <span class="text-xs"><i class="fa-solid fa-chevron-right"></i></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- banner section starts -->
+        <section class="rounded-lg w-full pt-20 bg-[url('images/banner.png')] bg-cover mt-4 lg:mt-16">
+            <div class="h-full w-full max-w-7xl mx-auto px-5 flex justify-center items-center">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-7xl font-garamond text-white font-extrabold py-5">We Provide Effective <br>Legal
+                        Solutions</h1>
+                    <p class=" text-gray-200 py-5">Legal solution is a one-stop unique solution to your business. A-centric solutions, <br> speedy service, comparative cost solutions and easy availability
+                    </p>
+                    <!-- search -->
+                    <div class="space-x-3 mb-20">
+                        
+                            <input class="w-2/4 bg-zinc-100 focus:ring-orange-300 rounded-md border-none font-semibold text-sm h-12 p-6" type="text" placeholder="Search your services">
+                        <button
+                            class="text-gray-200 bg-brown hover:bg-brown focus:ring-4 focus:outline-none focus:ring-orange-300 font-bold rounded-md px-8 py-2.5 h-12 lg:py-3 text-center mr-3 md:mr-0">Search</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- legal practice area  -->
+    <section class="container mx-auto max-w-5xl mt-16 lg:mt-24">
+        <div class="text-center">
+            <h1 class="text-4xl font-garamond font-bold py-8">The Legal Practice Area</h1>
+            <p class="text-gray-600">Read about the types of law you can choose between when you specialise in your legal career. <br> There are countless areas of law to discover.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 mt-8 lg:mt-16">
+                <!-- 1box -->
+                <div
+                    class="text-center max-w-sm mx-auto p-8 bg-white space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-r-2 lg:border-b-2	border-zinc-200">
+                    <img class="mx-auto" src="images/business.png" alt="">
+                    <h3 class="text-lg font-bold">Business Law</h3>
+                    <p>Business law, also called commercial law or mercantile law, the body of rules, whether by convention, agreement, or national or international legislation.</p>
+                    <img class="mx-auto" src="images/Frame.png" alt="">
+                </div>
+                <div
+                    class="text-center max-w-sm mx-auto p-8 bg-white space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-b-2 lg:border-r-2 border-zinc-200">
+                    <img class="mx-auto" src="images/criminal.png" alt="">
+                    <h3 class="text-lg font-bold">Criminal Law</h3>
+                    <p>A system of law concerned with the punishment of offenders.Enforce the law of justice to all individual.In simple terms
+                        "it is the function of the criminal law to punish"</p>
+                    <img class="mx-auto" src="images/Frame.png" alt="">
+                </div>
+                <div
+                    class="text-center max-w-sm mx-auto p-8 bg-white space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-b-2 border-zinc-200">
+                    <img class="mx-auto" src="images/child.png" alt="">
+                    <h3 class="text-lg font-bold">Child Support</h3>
+                    <p>Child support (or child maintenance) is an ongoing, periodic payment made by a parent for the financial benefit of a child.Parents gets assistance in obtaining financial support</p>
+                    <img class="mx-auto" src="images/Frame.png" alt="">
+                </div>
+                <div
+                    class="text-center max-w-sm mx-auto p-8 bg-white space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-r-2 border-zinc-200">
+                    <img class="mx-auto" src="images/education.png" alt="">
+                    <h3 class="text-lg font-bold">Education Law</h3>
+                    <p>Education law is a set of rules and regulations that guide the workings of an education system. Many regions have detailed educational law systems.It guide the education system</p>
+                    <img class="mx-auto" src="images/Frame.png" alt="">
+                </div>
+                <div
+                    class="text-center max-w-sm mx-auto p-8 bg-white space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-r-2 border-zinc-200">
+                    <img class="mx-auto" src="images/divorce.png" alt="">
+                    <h3 class="text-lg font-bold">Divorce Law</h3>
+                    <p>Divorce entails the cancelation or reorganisation of the legal responsibilities of marriage by dissolving the bonds of marriage between a married couple.</p>
+                    <img class="mx-auto" src="images/Frame.png" alt="">
+                </div>
+                <div
+                    class="text-center max-w-sm mx-auto p-8 bg-white space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 border-zinc-200">
+                    <img class="mx-auto" src="images/tax.png" alt="">
+                    <h3 class="text-lg font-bold">Tax Law</h3>
+                    <p>Tax law, body of rules under which a public authority has a claim on taxpayers, requiring them to transfer to the authority part of their income or property.</p>
+                    <img class="mx-auto" src="images/Frame.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- client section  -->
+    <section class="container mx-auto max-w-5xl lg:mt-28">
+        <div class="text-center mx-5">
+            <h1 class="text-4xl font-garamond font-bold">What Our Client Say</h1>
+            <p class="text-gray-600 py-5 lg:py-12">We have served more than thousand clients with outmost sincerity for more than a decade
+                <br>Learn about our service from thier feedback</p>
+            <!-- carousel  -->
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span
+                            class="absolute text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center">
+                            <img class="mx-auto mb-4 rounded-full ring-4 ring-white" src="images/client.png" alt="">
+                            <h1 class="text-2xl font-bold mb-1">Tony Stark</h1>
+                            <p class="mb-10">Teacher</p>
+                            <p>“A massive thank you for all of your help collecting the data points and the content for the board meeting.”</p>
+                        </span>
+                        <img class="bg h-full w-full" src="images/slider-1.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span
+                            class="absolute text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center">
+                            <img class="mx-auto mb-4 rounded-full ring-4 ring-white" src="images/client.png" alt="">
+                            <h1 class="text-2xl font-bold mb-1">Steve Roger</h1>
+                            <p class="mb-10">UIX Designer</p>
+                            <p>Your willingness and ability to collaborate with other teams is something we can all learn from. </p>
+                        </span>
+                        <img class="bg h-full w-full" src="images/slider-2.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <span
+                            class="absolute text-white -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 text-center">
+                            <img class="mx-auto mb-4 rounded-full ring-4 ring-white" src="images/client.png" alt="">
+                            <h1 class="text-2xl font-bold mb-1">Bruce Banner</h1>
+                            <p class="mb-10">Designer</p>
+                            <p>Thank you for offering up your time to help others do their role better through sharing your knowledge with us.</p>
+                        </span>
+                        <img class="bg h-full w-full" src="images/slider-3.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <!-- faq section  -->
+    <section class="container my-16 mx-auto max-w-5xl lg:mt-24">
+        <div class="text-center">
+            <h1 class="text-4xl font-garamond font-bold py-5">Frequently Asked Any Questions</h1>
+            <p class="text-gray-600 py-5">Some common questions asked in the Web Development field</p>
+            <div class="lg:flex-row md:flex-row flex flex-col-reverse justify-center items-center gap-10 p-5">
+                <div class="lg:w-3/4 md:w-1/2">
+                    <!-- Questions item 1 -->
+                    <div class="relative w-full overflow-hidden mx-auto mb-5">
+                        <input class="peer absolute top-0 inset-x-0 w-full h-full opacity-0 z-10 cursor-pointer"
+                            type="checkbox">
+                        <div
+                            class="peer-checked:bg-neutral-100 bg-neutral-100 w-full md:pl-5 pl-2 md:py-6 py-5 flex items-center rounded-md">
+                            <h4 class="md:text-xl text-sm font-semibold text-zinc-700 text-start font-garamond">
+                                What is the difference between flexbox <br class="md:hidden"> and grid?
+                            </h4>
+                        </div>
+                        <!-- arrow icon -->
+                        <div
+                            class="absolute top-6 md:right-5 right-3 transition-transform duration-200 rotate-180 peer-checked:rotate-0">
+                            <i class="fas fa-regular fa-angle-down"></i>
+                        </div>
+
+                        <!-- content -->
+                        <div class="bg-neutral-100 overflow-hidden transition-all duration-500
+                          max-h-40 peer-checked:max-h-0">
+                            <div class="p-4">
+                                <p class="text-start text-zinc-500 text-sm md:text-base">Grid and flexbox. The basic
+                                    difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was
+                                    designed for layout in one dimension - either a row or a column. Grid was designed
+                                    for two-dimensional layout - rows, and columns at the same time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Questions item 2 -->
+                    <div class="relative w-full overflow-hidden mx-auto mb-5">
+                        <input class="peer absolute top-0 inset-x-0 w-full h-full opacity-0 z-10 cursor-pointer"
+                            type="checkbox">
+                        <div
+                            class="peer-checked:bg-neutral-100 bg-neutral-100 w-full md:pl-5 pl-2 md:py-6 py-5 flex items-center rounded-md">
+                            <h4 class="md:text-xl text-sm font-semibold text-zinc-700 text-start font-garamond">
+                                What is the purpose of media query?
+                            </h4>
+                        </div>
+                        <!-- arrow icon -->
+                        <div
+                            class="absolute top-6 md:right-5 right-3 transition-transform duration-200 rotate-0 peer-checked:rotate-180">
+                            <i class="fas fa-regular fa-angle-down"></i>
+                        </div>
+
+                        <!-- content -->
+                        <div class="bg-neutral-100 overflow-hidden transition-all duration-500
+                          max-h-0 peer-checked:max-h-40">
+                            <div class="p-4">
+                                <p class="text-start text-zinc-500 text-sm md:text-base">Media queries are a key part of responsive web design, as they allow you to create different layouts depending on the size of the viewport, but they can also be used to detect other things about the environment your site is running on</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Questions item 3 -->
+                    <div class="relative w-full overflow-hidden mx-auto mb-5">
+                        <input class="peer absolute top-0 inset-x-0 w-full h-full opacity-0 z-10 cursor-pointer"
+                            type="checkbox">
+                        <div
+                            class="peer-checked:bg-neutral-100 bg-neutral-100 w-full md:pl-5 pl-2 md:py-6 py-5 flex items-center rounded-md">
+                            <h4 class="md:text-xl text-sm font-semibold text-zinc-700 text-start font-garamond">
+                                What is the CSS box model? How does it work?
+                            </h4>
+                        </div>
+                        <!-- arrow icon -->
+                        <div
+                            class="absolute top-6 md:right-5 right-3 transition-transform duration-200 rotate-0 peer-checked:rotate-180">
+                            <i class="fas fa-regular fa-angle-down"></i>
+                        </div>
+
+                        <!-- content -->
+                        <div class="bg-neutral-100 overflow-hidden transition-all duration-500
+                          max-h-0 peer-checked:max-h-40">
+                            <div class="p-4">
+                                <p class="text-start text-zinc-500 text-sm md:text-base">In CSS, the term "box model" is
+                                    used when talking about design and layout. The CSS box model is essentially a box
+                                    that wraps around every HTML element. It consists of: margins, borders, padding, and
+                                    the actual content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Questions item 4 -->
+                    <div class="relative w-full overflow-hidden mx-auto mb-5">
+                        <input class="peer absolute top-0 inset-x-0 w-full h-full opacity-0 z-10 cursor-pointer"
+                            type="checkbox">
+                        <div
+                            class="peer-checked:bg-neutral-100 bg-neutral-100 w-full md:pl-5 pl-2 md:py-6 py-5 flex items-center rounded-md">
+                            <h4 class="md:text-xl text-sm font-semibold text-zinc-700 text-start font-garamond">
+                                What is the semantic tag?
+                            </h4>
+                        </div>
+                        <!-- arrow icon -->
+                        <div
+                            class="absolute top-6 md:right-5 right-3 transition-transform duration-200 rotate-0 peer-checked:rotate-180">
+                            <i class="fas fa-regular fa-angle-down"></i>
+                        </div>
+
+                        <!-- content -->
+                        <div class="bg-neutral-100 overflow-hidden transition-all duration-500
+                          max-h-0 peer-checked:max-h-40">
+                            <div class="p-4">
+                                <p class="text-start text-zinc-500 text-sm md:text-base">The semantic HTML tags help the
+                                    search engines and other user devices to determine the importance and context of web
+                                    pages. The pages made with semantic elements are much easier to read. It has greater
+                                    accessibility. It offers a better user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="lg:w-1/2 md:w-1/2 sm:w-full">
+                    <img src="images/faq.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog section  -->
+
+    <section class="container my-16 mx-auto max-w-5xl">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl">
+            <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+                <h2 class="text-4xl font-garamond font-bold py-5">Our
+                    Blog</h2>
+                <p class="text-gray-600 py-5">We use an agile approach to test
+                    assumptions and connect with the needs of your audience early and often.</p>
+            </div>
+            <div class="grid gap-8 lg:grid-cols-2">
+                <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                            <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z">
+                                </path>
+                            </svg>
+                            Article
+                        </span>
+                        <span class="text-sm">5 days ago</span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900"><a href="#">Restorative Justice or
+                            Transformative Justice???</a></h2>
+                    <p class="mb-5 font-light text-gray-500 ">Transformation, unlike resolution, restoration,
+                        management, reform, or revolution addresses very distinctive issues that these other approaches
+                        to conflict and justice do not. Transformative justice challenges all aspects of
+                        authoritarianism, domination, and control within society today.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <img class="w-7 h-7 rounded-full"
+                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                                alt="Jese Leos avatar" />
+                            <span class="font-medium dark:text-white">
+                                Jese Leos
+                            </span>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                            Read more
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md ">
+                    <div class="flex justify-between items-center mb-5 text-gray-500">
+                        <span
+                            class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
+                            <svg class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
+                                    clip-rule="evenodd"></path>
+                                <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
+                            </svg>
+                            Article
+                        </span>
+                        <span class="text-sm">14 days ago</span>
+                    </div>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 "><a href="#">What do you think of
+                            White Supremacy?</a></h2>
+                    <p class="mb-5 font-light text-gray-500 ">The obsession as to whether human-kind is fundamentally
+                        bad or good has preoccupied scholars for millennia. This can be traced back to the Catholic
+                        theologian, Augustine (354-430), who believed that men and women are basically bad, all born
+                        into original sin.</p>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <img class="w-7 h-7 rounded-full"
+                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                                alt="Bonnie Green avatar" />
+                            <span class="font-medium ">
+                                Bonnie Green
+                            </span>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
+                            Read more
+                            <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <section class="container my-16 mx-auto max-w-5xl lg:mt-24">
+        <div class="text-center px-8">
+            <h1 class="text-4xl font-garamond font-bold py-5">Contact With Us</h1>
+            <p class="text-gray-600 py-5">By filling out the form reach us for help and support</p>
+        </div>
+        <div class="lg:flex justify-center items-center p-5 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-0 gap-4 lg:w-1/2 mb-5 ">
+                <div
+                    class="text-center max-w-sm mx-auto w-full p-8 bg-zinc-100 space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-b-2 lg:border-r-2	border-zinc-200 ">
+                    <img class="mx-auto" src="images/location.png" alt="">
+                    <h3 class="text-lg font-bold">Address</h3>
+                    <p class="text-gray-500 text-sm font-medium">A108 Adam Street, <br class="md:hidden">
+                        New York, NY 535022</p>
+                </div>
+                <div
+                    class="text-center max-w-sm mx-auto w-full p-8 bg-zinc-100 space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-b-2 lg:border-r-2	border-zinc-200 ">
+                    <img class="mx-auto" src="images/call.png" alt="">
+                    <h3 class="text-lg font-bold">Call Us</h3>
+                    <p class="text-gray-500 text-sm font-medium">+880175000000<br class="md:hidden">
+                       +880175000000</p>
+                </div>
+                <div
+                    class="text-center max-w-sm mx-auto w-full p-8 bg-zinc-100 space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-b-2 lg:border-r-2	border-zinc-200 ">
+                    <img class="mx-auto" src="images/email.png" alt="">
+                    <h3 class="text-lg font-bold">Email Us</h3>
+                    <p class="text-gray-500 text-sm font-medium">info@gmail.com <br class="md:hidden">
+                        info@gmail.com</p>
+                </div>
+                <div
+                    class="text-center max-w-sm mx-auto w-full p-8 bg-zinc-100 space-y-4 hover:bg-gradient-to-b from-zinc-100 to-white-100 lg:border-b-2 lg:border-r-2	border-zinc-200 ">
+                    <img class="mx-auto" src="images/time.png" alt="">
+                    <h3 class="text-lg font-bold">Working Hours</h3>
+                    <p class="text-gray-500 text-sm font-medium">Mon-Fri: 9AM to 5PM <br class="md:hidden">
+                        Sunday: 9AM to 1 PM</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-4 mb-5 lg:w-1/2">
+                <input class="bg-zinc-100 rounded-md border-none font-semibold text-sm h-16 p-6" type="text" placeholder="Your Name">
+                <input class="bg-zinc-100 rounded-md border-none font-semibold text-sm h-16 p-6" type="email" name="" id="" placeholder="Your Email">
+                <input class="bg-zinc-100 rounded-md border-none font-semibold text-sm h-16 p-6" type="text" placeholder="Subject">
+                <textarea class="bg-zinc-100 rounded-md border-none font-semibold text-sm h-28 p-6" name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+               <button class="text-white bg-brown hover:bg-brown focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 lg:px-6 lg:py-4 text-center mr-3 md:mr-0">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer starts  -->
+
+    <footer class="p-5 bg-dark p-6 pb-20">
+        <div class="lg:flex lg:max-w-5xl justify-between gap-x-28 container mx-auto lg:mt-5 py-5 lg:pb-16">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center mb-5">
+                    <img src="images/logo.png" class="h-8 mr-3" alt="FlowBite Logo" />
+                </a>
+                <p class="text-gray-400">The mission of the Department of Justice is to uphold the rule of law, to keep
+                    our country safe, and to protect civil rights.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-16 sm:gap-6">
+                <div>
+                    <h2 class="mb-6 font-garamond font-semibold text-white">Usefull Link</h2>
+                    <ul class="text-gray-400 space-y-3">
+                        <li class="">
+                            <a href="https://flowbite.com/" class="hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">Cases</a>
+                        </li>
+                        <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 font-garamond font-semibold text-white">Contact Now</h2>
+                    <ul class="text-gray-400">
+                        <li class="mb-4">
+                            <a href="https://github.com/themesberg/flowbite" class="hover:underline ">555 4th 5t NW,
+                                Washington <br>
+                                DC 20530, United States</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">+88 01750 000 000 <br>
+                                +88 01750 000 000</a>
+                        </li>
+                        <li class="pt-5">
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">info@gmail.com <br>
+                                info@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="mb-6 font-semibold text-white font-garamond">Subscribe</h2>
+                    <ul class="text-gray-400">
+                        <li class="mb-4">
+                            <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+                        </li>
+                        <li class="flex">
+                            <input class="rounded-md py-2.5 h-12 lg:py-3" type="email" placeholder="Email address">
+                            <button
+                                class="text-gray-200 bg-brown hover:bg-brown focus:ring-2 focus:outline-none focus:ring-orange-300 font-bold rounded-md px-5 text-center -mx-5  text-lg"><i
+                                    class="fa-regular fa-paper-plane"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+</body>
+
+</html>
